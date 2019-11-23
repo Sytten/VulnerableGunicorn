@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+app.debug = True
 
 
 @app.route('/', methods=['GET', 'POST'])
